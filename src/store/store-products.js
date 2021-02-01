@@ -13,7 +13,7 @@ products:[
         'discount':'YES'
       },
       {
-        'id':1,
+        'id':2,
         'product_name':'Camera',
         'price':9990,
         'quantity':56,
@@ -25,7 +25,7 @@ products:[
         'discount':'YES'
       },
       {
-        'id':1,
+        'id':3,
         'product_name':'Camera',
         'price':9990,
         'quantity':56,
@@ -37,7 +37,7 @@ products:[
         'discount':'YES'
       },
       {
-        'id':1,
+        'id':4,
         'product_name':'Camera',
         'price':9990,
         'quantity':56,
@@ -49,7 +49,7 @@ products:[
         'discount':'YES'
       },
       {
-        'id':1,
+        'id':5,
         'product_name':'Camera',
         'price':9990,
         'quantity':56,
@@ -61,7 +61,7 @@ products:[
         'discount':'YES'
       },
       {
-        'id':1,
+        'id':6,
         'product_name':'Camera',
         'price':9990,
         'quantity':56,
@@ -73,7 +73,7 @@ products:[
         'discount':'YES'
       },
       {
-        'id':1,
+        'id':7,
         'product_name':'Camera',
         'price':9990,
         'quantity':56,
@@ -85,7 +85,7 @@ products:[
         'discount':'YES'
       },
       {
-        'id':1,
+        'id':8,
         'product_name':'Camera',
         'price':9990,
         'quantity':56,
@@ -97,7 +97,7 @@ products:[
         'discount':'YES'
       },
       {
-        'id':1,
+        'id':9,
         'product_name':'Camera',
         'price':9990,
         'quantity':56,
@@ -109,7 +109,7 @@ products:[
         'discount':'YES'
       },
       {
-        'id':1,
+        'id':10,
         'product_name':'Camera',
         'price':9990,
         'quantity':56,
@@ -121,7 +121,7 @@ products:[
         'discount':'YES'
       },
       {
-        'id':1,
+        'id':11,
         'product_name':'Camera',
         'price':9990,
         'quantity':56,
@@ -133,7 +133,7 @@ products:[
         'discount':'YES'
       },
       {
-        'id':1,
+        'id':12,
         'product_name':'Camera',
         'price':9990,
         'quantity':56,
@@ -145,7 +145,7 @@ products:[
         'discount':'YES'
       },
       {
-        'id':1,
+        'id':13,
         'product_name':'Camera',
         'price':9990,
         'quantity':56,
