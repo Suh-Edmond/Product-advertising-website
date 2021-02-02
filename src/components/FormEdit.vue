@@ -1,6 +1,6 @@
 <template>
   <div class="row">
-    <div class="col-6 col-md-6 col-xs-12 col-sm-12 stepper">
+    <div class="col-7 col-md-7 col-xs-12 col-sm-12 stepper">
       <q-card>
         <q-card-section class="row bg-primary">
           <div class="text-h5  text-white">Update Product</div>
