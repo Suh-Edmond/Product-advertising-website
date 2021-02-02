@@ -3,12 +3,10 @@
     <q-item-section avatar top>
       <q-avatar icon="folder" color="primary" text-color="white" />
     </q-item-section>
-
     <q-item-section>
-      <q-item-label lines="1">{{ product.product_name  }}</q-item-label>
-      <q-item-label caption>{{ product }} CFA</q-item-label>
+      <q-item-label lines="1">{{ product.product_name }}</q-item-label>
+      <q-item-label caption>{{ product.price }}</q-item-label>
     </q-item-section>
-
     <q-item-section side>
       <q-btn color="dark" icon="more_vert" no-caps flat dense>
         <q-menu>
@@ -53,7 +51,6 @@
         </q-menu>
       </q-btn>
     </q-item-section>
-
     <!-- slot for edit product details -->
     <q-dialog v-model="prompt">
       <FormEdit :updatedProduct="product" :id="id"></FormEdit>
@@ -66,14 +63,10 @@ export default {
   props: ["product", "id"],
   data() {
     return {
-      filter: null,
       prompt: false
     };
   },
-  
   methods: {
-     
-    
     //delete a selected item
     deleteProduct(id) {
       this.$q
@@ -95,4 +88,4 @@ export default {
     FormEdit: require("components/FormEdit").default
   }
 };
- 
+</script>
