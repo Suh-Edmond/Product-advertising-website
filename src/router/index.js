@@ -16,6 +16,7 @@ Vue.use(VueRouter)
 let router = null
 export default function (/* { store, ssrContext } */) {
   const Router = new VueRouter({
+     mode: 'history',
     scrollBehavior: () => ({ x: 0, y: 0 }),
     routes,
 

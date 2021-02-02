@@ -3,7 +3,6 @@ import { uid } from 'quasar'
 const state  = {
 products:{
     "ID1":{
-        
         product_name:'TV',
         price:9990,
         quantity:56,
@@ -15,8 +14,7 @@ products:{
         discount:true
       },
        "ID2":{
-        
-        product_name:'TV',
+        product_name:'Laptop',
         price:9990,
         quantity:56,
         description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis falsestrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
@@ -27,8 +25,7 @@ products:{
         discount:true
       },
        "ID3":{
-        
-        product_name:'TV',
+        product_name:'Product',
         price:9990,
         quantity:56,
         description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis falsestrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
@@ -40,7 +37,7 @@ products:{
       },
       "ID4":{
         
-        product_name:'TV',
+        product_name:'Smart Phones',
         price:9990,
         quantity:56,
         description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis falsestrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
@@ -51,8 +48,7 @@ products:{
         discount:true
       },
        "ID5":{
-        
-        product_name:'TV',
+        product_name:'TV SCRRENS',
         price:9990,
         quantity:56,
         description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis falsestrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
@@ -63,8 +59,7 @@ products:{
         discount:true
       },
       "ID6":{
-        
-        product_name:'TV',
+        product_name:'Mouse',
         price:9990,
         quantity:56,
         description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis falsestrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
@@ -75,8 +70,7 @@ products:{
         discount:true
       },
        "ID7":{
-        
-        product_name:'TV',
+        product_name:'Keyboard',
         price:9990,
         quantity:56,
         description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis falsestrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
@@ -87,8 +81,7 @@ products:{
         discount:true
       },
        "ID8":{
-        
-        product_name:'TV',
+        product_name:'Charger',
         price:9990,
         quantity:56,
         description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis falsestrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
@@ -99,8 +92,7 @@ products:{
         discount:true
       },
        "ID9":{
-        
-        product_name:'TV',
+        product_name:'Pencils',
         price:9990,
         quantity:56,
         description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis falsestrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
@@ -111,8 +103,7 @@ products:{
         discount:true
       },
        "ID10":{
-        
-        product_name:'TV',
+        product_name:'Books',
         price:9990,
         quantity:56,
         description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis falsestrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
@@ -123,8 +114,7 @@ products:{
         discount:true
       },
        "ID11":{
-        
-        product_name:'TV',
+        product_name:'Batteries',
         price:9990,
         quantity:56,
         description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis falsestrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
@@ -135,8 +125,7 @@ products:{
         discount:true
       },
       "ID12":{
-        
-        product_name:'TV',
+        product_name:'Screens',
         price:9990,
         quantity:56,
         description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis falsestrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',

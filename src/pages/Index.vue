@@ -6,10 +6,11 @@
         <q-list bordered padding class="rounded-borders" separator>
           <Product
             v-for="(product, index) in products"
-            :key="index"
+            :key="product"
             :product="product"
             :id="index"
-          ></Product>
+          >
+          </Product>
         </q-list>
       </div>
     </div>
@@ -55,9 +56,14 @@ export default {
       return this.$store.getters["products/products"];
     }
   },
+  methods: {
+    test() {
+      console.log(this.products);
+    }
+  },
   components: {
-    Product: require("components/Products.vue").default,
-    Form: require("components/Form.vue").default
+    Form: require("components/Form.vue").default,
+    Product: require("components/Product.vue").default
   }
 };
 </script>

@@ -1,5 +1,6 @@
 
 const routes = [
+  
   {
     path: '/',
     component: () => import('layouts/MainLayout.vue'),
@@ -14,6 +15,14 @@ const routes = [
         component: () => import('pages/ProductDetails.vue'),
         name:"ProductDetails"
       },
+      {
+        path:'/register',
+        component: ()=> import('pages/Register.vue'),
+      },
+      {
+        path:'/login',
+        component: ()=> import('pages/Login')
+      }
       
     ]
   },
