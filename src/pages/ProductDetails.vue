@@ -27,47 +27,29 @@
           </q-card-section>
         </q-card>
       </div>
-      <div class="col-3 col-md-3 col-sm-3 col-lg-3"></div>
+      <div class="col-3 col-md-3 col-sm-3 col-lg-3">
+        <q-btn label="click" @click="showId()"></q-btn>
+      </div>
     </div>
   </q-page>
 </template>
 
 <script>
 export default {
-  props: ["products"],
   data() {
     return {
-      filter: "",
-      columns: [
-        {
-          name: "product_name",
-          required: true,
-          label: "Product Name",
-          align: "left",
-          field: "product_name",
-          format: val => `${val}`,
-          sortable: true
-        },
-        {
-          name: "price",
-          align: "center",
-          label: "Price",
-          field: "price",
-          sortable: true
-        },
-        {
-          name: "quantity",
-          label: "Quantity",
-          field: "quantity",
-          sortable: true
-        },
-        { name: "description", label: "Description", field: "description" },
-        { name: "condition", label: "Condition", field: "condition" },
-        { name: "discount", label: "On Discount?", field: "discount" },
-        { name: "service", label: "A Service?", field: "service" },
-        { name: "in_stock", label: "In Stocked?", field: "in_stock" }
-      ]
+      filter: ""
     };
+  },
+  computed: {
+    products() {
+      return this.$store.getters["products/products"];
+    }
+  },
+  methods: {
+    showId() {
+      console.log(this.products);
+    }
   }
 };
 </script>

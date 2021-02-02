@@ -10,41 +10,48 @@
     </q-item-section>
 
     <q-item-section side>
-      <q-btn
-        color="info"
-        icon="info"
-        no-caps
-        flat
-        dense
-        @click="showProduct(id)"
-      >
-        <q-tooltip>See more </q-tooltip>
+      <q-btn color="dark" icon="more_vert" no-caps flat dense>
+        <q-menu>
+          <q-list>
+            <div class="   text-center">
+              <q-item clickable v-close-popup>
+                <q-item-section>
+                  <q-item-label>
+                    <router-link
+                      :to="{ name: 'ProductDetails', params: { id: id } }"
+                    >
+                      <q-icon name="info" size="sm" color="info" />
+                      <span class="q-pl-md">Show product</span>
+                    </router-link>
+                  </q-item-label>
+                </q-item-section>
+              </q-item>
+            </div>
+            <div class="   text-center">
+              <q-item clickable v-close-popup>
+                <q-item-section>
+                  <q-item-label @click="prompt = true">
+                    <q-icon name="edit" size="sm" color="primary" />
+                    <span class="q-pl-md">Edit product</span>
+                  </q-item-label>
+                </q-item-section>
+              </q-item>
+            </div>
+            <div class="   text-center">
+              <q-item clickable v-close-popup>
+                <q-item-section>
+                  <q-item-label @click="deleteProduct(id)">
+                    <q-icon name="delete" size="sm" color="negative" />
+                    <span class="q-pl-md">Delete product</span>
+                  </q-item-label>
+                </q-item-section>
+              </q-item>
+            </div>
+          </q-list>
+        </q-menu>
       </q-btn>
     </q-item-section>
-    <q-item-section side>
-      <q-btn
-        color="primary"
-        icon="edit"
-        no-caps
-        flat
-        dense
-        @click="prompt = true"
-      >
-        <q-tooltip>Edit Product</q-tooltip>
-      </q-btn>
-    </q-item-section>
-    <q-item-section side>
-      <q-btn
-        color="negative"
-        icon="delete"
-        no-caps
-        flat
-        dense
-        @click="deleteProduct(id)"
-      >
-        <q-tooltip>Delete Product</q-tooltip>
-      </q-btn>
-    </q-item-section>
+
     <!-- slot for edit product details -->
     <q-dialog v-model="prompt">
       <FormEdit :updatedProduct="product" :id="id"></FormEdit>
@@ -66,16 +73,17 @@ export default {
     //show product
     showProduct(prod_id) {
       console.log(prod_id);
-      $this.$router.push("/home/user/product/".prod_id);
+      this.$router.push("/home/user/product/".prod_id);
     },
 
     //delete a selected item
     deleteProduct(id) {
       this.$q
         .dialog({
-          message: "Do yoou want to delete this product?",
+          message: "Do you want to delete this product?",
           cancel: true,
-          persistent: true
+          persistent: true,
+          size: "40px"
         })
         .onOk(() => {
           this.$store.dispatch("products/delete", id);

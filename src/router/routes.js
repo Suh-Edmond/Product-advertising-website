@@ -8,19 +8,9 @@ const routes = [
         path: '', 
         component: () => import('pages/Index.vue'),
         name:"MarketProducts"
-      },//loads all products been advertised
-      {
-        path:'/home', 
-        component: () => import('pages/Home.vue'),
-        name:"Home"
       },
       {
-        path:'/home/user/products', 
-        component: () =>import('pages/UserProduct.vue'),
-        name:"UserProduct"
-      },
-      {
-        path:'/home/user/products/:id', 
+        path:'/products/:id', 
         component: () => import('pages/ProductDetails.vue'),
         name:"ProductDetails"
       },
