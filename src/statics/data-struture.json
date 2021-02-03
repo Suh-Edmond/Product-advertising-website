@@ -1,0 +1,95 @@
+{
+    "product": {
+  
+                "id1":{
+                    "name":"Laptop",
+                    "price":"5784",
+                    "quantity":"8594",
+                    "description":"A product",
+                    "condition":"Great",
+                    "discount":"true",
+                    "service":"true",
+                    "published":"false",
+                    "in_stock":"true"
+                },
+                 "id2":{
+                    "name":"Laptop1",
+                    "price":"5784",
+                    "quantity":"8594",
+                    "description":"A product",
+                    "condition":"Great",
+                    "discount":"true",
+                    "service":"true",
+                    "published":"false",
+                    "in_stock":"true"
+                },
+                 "id3":{
+                    "name":"Laptop 3",
+                    "price":"5784",
+                    "quantity":"8594",
+                    "description":"A product",
+                    "condition":"Great",
+                    "discount":"true",
+                    "service":"true",
+                    "published":"false",
+                    "in_stock":"true"
+                },
+                 "id4":{
+                    "name":"Laptop 4",
+                    "price":"5784",
+                    "quantity":"8594",
+                    "description":"A product",
+                    "condition":"Great",
+                    "discount":"true",
+                    "service":"true",
+                    "published":"false",
+                    "in_stock":"true"
+                },
+                 "id5":{
+                    "name":"Laptop 6",
+                    "price":"5784",
+                    "quantity":"8594",
+                    "description":"A product",
+                    "condition":"Great",
+                    "discount":"true",
+                    "service":"true",
+                    "published":"false",
+                    "in_stock":"true"
+                },
+                 "id6":{
+                    "name":"Laptop",
+                    "price":"5784",
+                    "quantity":"8594",
+                    "description":"A product",
+                    "condition":"Great",
+                    "discount":"true",
+                    "service":"true",
+                    "published":"false",
+                    "in_stock":"true"
+                },
+                 "id7":{
+                    "name":"Laptop 7",
+                    "price":"5784",
+                    "quantity":"8594",
+                    "description":"A product",
+                    "condition":"Great",
+                    "discount":"true",
+                    "service":"true",
+                    "published":"false",
+                    "in_stock":"true"
+                },
+                 "id8":{
+                    "name":"Laptop 7",
+                    "price":"5784",
+                    "quantity":"8594",
+                    "description":"A product",
+                    "condition":"Great",
+                    "discount":"true",
+                    "service":"true",
+                    "published":"false",
+                    "in_stock":"true"
+                }
+        }
+        
+     
+}

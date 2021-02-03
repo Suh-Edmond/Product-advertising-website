@@ -1,28 +1,37 @@
-<template>
-  <q-page>
-    <div v-for="product in products" :key="product.id">
-      <p>{{ product.product_name }}</p>
-      <p>{{ product.price }}</p>
-      <p>{{ product.quantity }}</p>
-      <p>{{ product.descripiton }}</p>
-      <p>{{ product.condition }}</p>
-      <p>{{ product.discount }}</p>
-      <p>{{ product.service }}</p>
-      <p>{{ product.in_stocked }}</p>
-      <p>{{ product.published }}</p>
-    </div>
-    <q-btn color="white" text-color="black" label="Standard" @click="work" />
-  </q-page>
-</template>
+ 
 
 <script>
 export default {
-  props: ["products"],
-
+  props: ["product", "id"],
+  data() {
+    return {
+      filter: null,
+      prompt: false
+    };
+  },
+  
   methods: {
-    work() {}
+     
+    
+    //delete a selected item
+    deleteProduct(id) {
+      this.$q
+        .dialog({
+          message: "Do you want to delete this product?",
+          cancel: true,
+          persistent: true,
+          size: "40px"
+        })
+        .onOk(() => {
+          this.$store.dispatch("products/delete", id);
+        })
+        .onCancel(() => {
+          // console.log('>>>> Cancel')
+        });
+    }
+  },
+  components: {
+    FormEdit: require("components/FormEdit").default
   }
 };
-</script>
-
-<style></style>
+ 
