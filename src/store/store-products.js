@@ -179,6 +179,7 @@ const actions = {
   delete:({commit}, id) => {
     commit('DELETE', id)
   },
+ 
   // registerUser:({commit}, payload) =>{  
   //   console.log(payload.email, payload.password)
   //  firebaseAuth.createUserWithEmailAndPassword(payload.email, payload.password).
@@ -196,6 +197,7 @@ const actions = {
   //    })
 
   // }
+ 
 }
 
 const getters = {
