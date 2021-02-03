@@ -145,8 +145,9 @@ export default {
   },
   methods: {
     addProduct() {
-      console.log(this.product);
-      this.$store.dispatch("products/addProduct", this.product);
+      if (this.Next()) {
+        this.$store.dispatch("products/addProduct", this.product);
+      }
     },
 
     Next() {
@@ -166,6 +167,7 @@ export default {
       } else {
         this.done1 = true;
         this.step = 2;
+        return true;
       }
     }
   }
