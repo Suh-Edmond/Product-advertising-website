@@ -6,7 +6,8 @@ const routes = [
     component: () => import('layouts/MainLayout.vue'),
     children: [
       { 
-        path: '', 
+        path: '',
+        redirect:'/home', 
         component: () => import('pages/Index.vue'),
         name:"MarketProducts"
       },
@@ -16,12 +17,8 @@ const routes = [
         name:"ProductDetails"
       },
       {
-        path:'/register',
-        component: ()=> import('pages/Register.vue'),
-      },
-      {
         path:'/login',
-        component: ()=> import('pages/Login')
+        component: ()=> import('pages/Register.vue'),
       }
       
     ]
@@ -34,5 +31,6 @@ const routes = [
     component: () => import('pages/Error404.vue')
   }
 ]
+ 
  
 export default routes

@@ -1,20 +1,21 @@
 <template>
-  <q-page>
-    <div class="row flex flex-center q-pt-md q-pb-md">
-      <div class="col-8 col-md-8 col-sm-12">
-        <q-item-label class="text-h6 q-py-md">Products in Store</q-item-label>
-        <q-list bordered padding class="rounded-borders" separator>
-          <Product
-            v-for="(product, index) in products"
-            :key="product"
-            :product="product"
-            :id="index"
-          >
-          </Product>
-        </q-list>
-      </div>
+  <q-page class="q-px-sm">
+    <div class="row q-pt-sm q-pb-md">
+      <q-item-label class="text-h6 q-py-md q-pl-md"
+        >Products in Store</q-item-label
+      >
     </div>
-    <div class="flex flex-center q-my-md q-px-md">
+    <div class="row">
+      <Product
+        class="  q-mb-md  "
+        v-for="(product, index) in products"
+        :key="index"
+        :product="product"
+        :id="index"
+      >
+      </Product>
+    </div>
+    <div class="fixed-bottom-right q-my-md q-px-md">
       <q-btn
         round
         color="primary"

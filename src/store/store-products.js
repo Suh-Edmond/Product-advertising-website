@@ -161,6 +161,8 @@ const mutations = {
      }
 }
 
+import {firebaseAuth, firebaseDB} from 'boot/firebase'
+
 const actions = {
   addProduct:({commit}, product) => {
    let prod_id =uid()
@@ -176,6 +178,23 @@ const actions = {
   },
   delete:({commit}, id) => {
     commit('DELETE', id)
+  },
+  registerUser:({commit}, payload) =>{  
+    console.log(payload.email, payload.password)
+   firebaseAuth.createUserWithEmailAndPassword(payload.email, payload.password).
+     then(response => {
+       console.log(response)
+       let userid = firebaseAuth.currentUser.uid
+      firebaseDB.ref(userid).set({
+        name:payload.name,
+        email:payload.email,
+        telephone:payload.telephone
+      })
+     }).
+     catch(error => {
+       console.log(error.message)
+     })
+
   }
 }
 

@@ -1,0 +1,180 @@
+{
+    "users": {
+        "userid1":{
+            "name":"Jane doe",
+            "email":"jane@gmail.com",
+            "telephone":"7548745893984"
+        },
+        "userid2":{
+            "name":"Jane doe",
+            "email":"jane@gmail.com",
+            "telephone":"7548745893984"
+        }
+
+    },
+    "product": {
+        "userid1":{
+            "products":{
+                "id1":{
+                    "name":"Laptop",
+                    "price":"5784",
+                    "quantity":"8594",
+                    "description":"A product",
+                    "condition":"Great",
+                    "discount":"true",
+                    "service":"true",
+                    "published":"false",
+                    "in_stock":"true"
+                },
+                 "id2":{
+                    "name":"Laptop1",
+                    "price":"5784",
+                    "quantity":"8594",
+                    "description":"A product",
+                    "condition":"Great",
+                    "discount":"true",
+                    "service":"true",
+                    "published":"false",
+                    "in_stock":"true"
+                },
+                 "id3":{
+                    "name":"Laptop 3",
+                    "price":"5784",
+                    "quantity":"8594",
+                    "description":"A product",
+                    "condition":"Great",
+                    "discount":"true",
+                    "service":"true",
+                    "published":"false",
+                    "in_stock":"true"
+                },
+                 "id4":{
+                    "name":"Laptop 4",
+                    "price":"5784",
+                    "quantity":"8594",
+                    "description":"A product",
+                    "condition":"Great",
+                    "discount":"true",
+                    "service":"true",
+                    "published":"false",
+                    "in_stock":"true"
+                },
+                 "id5":{
+                    "name":"Laptop 6",
+                    "price":"5784",
+                    "quantity":"8594",
+                    "description":"A product",
+                    "condition":"Great",
+                    "discount":"true",
+                    "service":"true",
+                    "published":"false",
+                    "in_stock":"true"
+                },
+                 "id6":{
+                    "name":"Laptop",
+                    "price":"5784",
+                    "quantity":"8594",
+                    "description":"A product",
+                    "condition":"Great",
+                    "discount":"true",
+                    "service":"true",
+                    "published":"false",
+                    "in_stock":"true"
+                },
+                 "id7":{
+                    "name":"Laptop 7",
+                    "price":"5784",
+                    "quantity":"8594",
+                    "description":"A product",
+                    "condition":"Great",
+                    "discount":"true",
+                    "service":"true",
+                    "published":"false",
+                    "in_stock":"true"
+                }
+
+            }
+        },
+        "userid2":{
+            "products":{
+                "id1":{
+                    "name":"Laptop",
+                    "price":"5784",
+                    "quantity":"8594",
+                    "description":"A product",
+                    "condition":"Great",
+                    "discount":"true",
+                    "service":"true",
+                    "published":"false",
+                    "in_stock":"true"
+                },
+                 "id2":{
+                    "name":"phone3",
+                    "price":"5784",
+                    "quantity":"8594",
+                    "description":"A product",
+                    "condition":"Great",
+                    "discount":"true",
+                    "service":"true",
+                    "published":"false",
+                    "in_stock":"true"
+                },
+                 "id3":{
+                    "name":"Laptop 3",
+                    "price":"5784",
+                    "quantity":"8594",
+                    "description":"A product",
+                    "condition":"Great",
+                    "discount":"true",
+                    "service":"true",
+                    "published":"false",
+                    "in_stock":"true"
+                },
+                 "id4":{
+                    "name":"phone 4",
+                    "price":"5784",
+                    "quantity":"8594",
+                    "description":"A product",
+                    "condition":"Great",
+                    "discount":"true",
+                    "service":"true",
+                    "published":"false",
+                    "in_stock":"true"
+                },
+                 "id5":{
+                    "name":"phone 6",
+                    "price":"5784",
+                    "quantity":"8594",
+                    "description":"A product",
+                    "condition":"Great",
+                    "discount":"true",
+                    "service":"true",
+                    "published":"false",
+                    "in_stock":"true"
+                },
+                 "id6":{
+                    "name":"Phone",
+                    "price":"5784",
+                    "quantity":"8594",
+                    "description":"A product",
+                    "condition":"Great",
+                    "discount":"true",
+                    "service":"true",
+                    "published":"false",
+                    "in_stock":"true"
+                },
+                 "id7":{
+                    "name":"phone 7",
+                    "price":"5784",
+                    "quantity":"8594",
+                    "description":"A product",
+                    "condition":"Great",
+                    "discount":"true",
+                    "service":"true",
+                    "published":"false",
+                    "in_stock":"true"
+                }
+            }
+        }
+    }
+}

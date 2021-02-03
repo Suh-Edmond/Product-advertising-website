@@ -1,61 +1,47 @@
 <template>
-  <q-item clickable v-ripple>
-    <q-item-section avatar top>
-      <q-avatar icon="folder" color="primary" text-color="white" />
-    </q-item-section>
-    <q-item-section>
-      <q-item-label lines="1">{{ product.product_name }}</q-item-label>
-      <q-item-label caption>{{ product.price }}</q-item-label>
-    </q-item-section>
-    <q-item-section side>
-      <q-btn color="dark" icon="more_vert" no-caps flat dense>
-        <q-menu>
-          <q-list>
-            <div class="   text-center">
-              <q-item clickable v-close-popup>
-                <q-item-section>
-                  <q-item-label>
-                    <q-icon name="info" size="sm" color="info" />
-                    <router-link
-                      :to="{ name: 'ProductDetails', params: { id: id } }"
-                    >
-                      <span class="q-pl-md" style="text-decoration:none;"
-                        >Show product</span
-                      >
-                    </router-link>
-                  </q-item-label>
-                </q-item-section>
-              </q-item>
-            </div>
-            <div class="   text-center">
-              <q-item clickable v-close-popup>
-                <q-item-section>
-                  <q-item-label @click="prompt = true">
-                    <q-icon name="edit" size="sm" color="primary" />
-                    <span class="q-pl-md">Edit product</span>
-                  </q-item-label>
-                </q-item-section>
-              </q-item>
-            </div>
-            <div class="   text-center">
-              <q-item clickable v-close-popup>
-                <q-item-section>
-                  <q-item-label @click="deleteProduct(id)">
-                    <q-icon name="delete" size="sm" color="negative" />
-                    <span class="q-pl-md">Delete product</span>
-                  </q-item-label>
-                </q-item-section>
-              </q-item>
-            </div>
-          </q-list>
-        </q-menu>
-      </q-btn>
-    </q-item-section>
-    <!-- slot for edit product details -->
-    <q-dialog v-model="prompt">
+  <q-card class="my-card  col-3 col-md-3 col-lg-3 col-xs-12 col-sm-12">
+    <q-card-section>
+      <div class="text-h6">{{ product.product_name }}</div>
+      <div class="text-subtitle2">Price: {{ product.price }} CFA</div>
+      <div class="text-subtitle2">Quantity :{{ product.quantity }}</div>
+    </q-card-section>
+
+    <q-card-section>
+      <div class="text-h6">
+        <q-item-label>Description</q-item-label>
+      </div>
+      {{ product.description }}
+    </q-card-section>
+
+    <q-separator dark />
+    <q-card-section>
+      <q-expansion-item expand-separator label="See more">
+        <div class="   text-left">
+          <q-item-label>
+            <router-link :to="{ name: 'ProductDetails', params: { id: id } }">
+              <span class="q-pl-md" style="text-decoration:none;"
+                >Show product details</span
+              >
+            </router-link>
+          </q-item-label>
+        </div>
+        <div class="row">
+          <div>
+            <q-btn flat @click="prompt = true" icon="edit" color="primary"
+              ><q-tooltip>edit product</q-tooltip></q-btn
+            >
+          </div>
+          <q-space />
+          <q-btn flat @click="deleteProduct(id)" icon="delete" color="negative"
+            ><q-tooltip>delete product</q-tooltip></q-btn
+          >
+        </div>
+      </q-expansion-item>
+    </q-card-section>
+    <q-dialog v-model="prompt" class="scroll">
       <FormEdit :updatedProduct="product" :id="id"></FormEdit>
     </q-dialog>
-  </q-item>
+  </q-card>
 </template>
 
 <script>
@@ -89,3 +75,11 @@ export default {
   }
 };
 </script>
+<style scoped>
+span {
+  text-decoration-color: none;
+}
+.scroll {
+  overflow: hidden;
+}
+</style>
