@@ -99,7 +99,7 @@ cfg.module.rules.push({
 
       // Quasar plugins
       plugins: [
-        QDialog
+         
       ]
     },
 
